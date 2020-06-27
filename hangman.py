@@ -31,8 +31,8 @@ def get_joke():
             punchline = joke_match.group(2).strip()
             return joke, punchline
     # discard joke if there is no distinct punchline
-    print(
-        f'Did not get a good joke. {joke_requests_remaining} tries left.')
+        print(
+            f'Did not get a good joke. {joke_requests_remaining} tries left.')
     sys.exit(1)
 
 
