@@ -3,6 +3,8 @@ import re
 import sys
 import requests
 
+
+# game settings
 body_dict = {}
 body_dict[6] = (f'--|')
 body_dict[5] = (f'{body_dict[6]}\n  O')
@@ -13,9 +15,9 @@ body_dict[1] = (f'{body_dict[2]}\n /')
 body_dict[0] = (f'{body_dict[1]} \\')
 guessed_letters = []
 wrong_letters = []
+joke_requests_remaining = 3
 # joke = 'What does an angry pepper do?'
 # punchline = 'It gets jalopeno face.'
-joke_requests_remaining = 3
 
 
 def get_joke():
